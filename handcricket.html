@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="handcricket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="index2.css">
 
     <title>Hashir's Project</title>
 
@@ -18,84 +20,71 @@
     <header>
         <div class="header">
             <div class="navbar navbar-extend-lg  ">
-                <h2 class="main-hd-game"><a href="handcricket.html">Hand Cricket</a></h2>
-                <h2 class="rule-hd-game"><button>Game Rules</button></h2>
+                <h2><a class="main-hd-game" href="handcricket.html">Hand Cricket</a></h2>
+                <h2><button class="main-hd-game rule-hd-game">Game Rules <i class="fa-regular fa-comments"></i></button>
+                </h2>
+
             </div>
         </div>
     </header>
     <main>
-        <h2 class="game-name mt-3">Do You Wanna Play?</h2>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-sm-6 mt-5 p-2 text-center">
-                        <h3>Player</h3>
-                        <div class="img">
-                            <img id="emoji-start" src="emoji start.png" alt="">
-                            <img id="emoji1" src="emoji 1 1.png" alt="">
-                            <img id="emoji2" src="emoji 1 2.png" alt="">
-                            <img id="emoji3" src="emoji 1 3.jpg" alt="">
-                            <img id="emoji4" src="emoji 1 4.png" alt="">
-                            <img id="emoji5" src="emoji 1 5.jpg" alt="">
-                            <img id="emoji6" src="emoji 1 6.png" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mt-4 color-change">Do You Wanna Play?</h2>
+                    <div class="row mt-5 text-center">
+                        <div class="col-4">
+                            <p class="hd-normal">Player</p>
+                            <img class="game-image" src="emoji start.png" alt="">
+                            <br>
+                            <div class="placeholder-score"></div>
+                            <p class="hd-normal">Player Score</p>
                         </div>
-                        <input id="user-score" type="number" placeholder="">
-                        <h4>Player Score</h4>
-                        <div class="dropdown">
-                            <button class=" game-btn btn  dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Play
-                            </button>
-
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item">1</button></li>
-                                <li><button class="dropdown-item">2</button></li>
-                                <li><button class="dropdown-item">3</button></li>
-                                <li><button class="dropdown-item">4</button></li>
-                                <li><button class="dropdown-item">5</button></li>
-                                <li><button class="dropdown-item">6</button></li>
-                            </ul>
+                        <div class="col-4 ">
+                            <div class="dropdown">
+                                <button class="toss-btn btn"> Toss </button>
+                                <div class="dropdown-content">
+                                    <p>Heads</p>
+                                    <p>Tails</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="dropdown">
+                            <button class="playing-btn btn">Play </button>
+                                <div class="dropdown-content">
+                                    <p>1</p>
+                                    <p>2</p>
+                                    <p>3</p>
+                                    <p>4</p>
+                                    <p>5</p>
+                                    <p>6</p>
+                                </div>
+                           </div>
+                            <br>
+                            <div class="placeholder-update">Choose The Toss</div>
                         </div>
-                    </div>
-
-                    <div class="col-sm-5 mt-5 p-2 text-center">
-                        <h3>Computer</h3>
-                        <div class="img2">
-                            <img id="emoji-start" src="emoji start.png" alt="">
-                            <img id="emoji1" src="emoji 1 1.png" alt="">
-                            <img id="emoji2" src="emoji 1 2.png" alt="">
-                            <img id="emoji3" src="emoji 1 3.jpg" alt="">
-                            <img id="emoji4" src="emoji 1 4.png" alt="">
-                            <img id="emoji5" src="emoji 1 5.jpg" alt="">
-                            <img id="emoji6" src="emoji 1 6.png" alt="">
+                        <div class="col-4">
+                            <p class="hd-normal">Computer</p>
+                            <img class="game-image" src="emoji start.png" alt="">
+                            <br>
+                            <div class="placeholder-score"></div>
+                            <p class="hd-normal">Computer Score</p>
                         </div>
-                        <input type="number" placeholder="">
-                        <h4>Computer Score</h4>
-                       
                     </div>
                 </div>
             </div>
         </div>
     </main>
-  <input type="text" name="" id="update-place">
-    <div class="dropdown-toss">
-        <button class=" game-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Choose Toss
-        </button>
-
-        <ul class="dropdown-menu">
-            <li><button class="dropdown-item">Head</button></li>
-            <li><button class="dropdown-item">Tails</button></li>
-        </ul>
-    </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="handcricket.js"></script>
+
+    <!-- <script src="handcricket.js"></script> -->
 </body>
 
 </html>

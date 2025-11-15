@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.navbar{
+    background-color: #0A400C;
+    color: white;
+    height: 100px;
+}
+
+.main-hd-game {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.color-change{
+    color: #0A400C;
+}
+
+.hd-normal{
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.game-image{
+    height: 150px;
+    width: 150px;
+}
+
+.placeholder-score{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: #0A400C;
+    height: 35px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 15px auto;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #0A400C;
+    border-radius: 40px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    color: #0A400C;
+}
+.btn:hover {
+    padding: 5px;
+    border: 2px solid #0A400C;
+    border-radius: 40px;
+    text-align: center;
+    margin: 10px;
+    background-color: #0A400C;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 3px #0A400C,2px 2px 6px 6px #0A400C;
+}
+.dropdown-content{
+    position: absolute;
+    z-index: 10;
+    display: none;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    width: 100px;
+    padding: 5px 0px;
+    border: 2px solid #0A400C;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 10px ;
+    background-color: #0A400C;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+.dropdown-content p{
+    background-color: transparent;
+    color: white;
+    border: 1px solid transparent;
+
+}
+.dropdown-content p:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.placeholder-update{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: #0A400C;
+    height:  auto;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 15px auto;
+    margin-top: 250px;
+    
+}
